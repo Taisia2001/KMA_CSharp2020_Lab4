@@ -211,5 +211,9 @@ namespace KMA.ProgrammingInCSharp2020.Lab4.Models
             }
             return age;
         }
+        public override string ToString()
+        {
+            return $"{Name} {Surname}";
+        }
     }
 }
