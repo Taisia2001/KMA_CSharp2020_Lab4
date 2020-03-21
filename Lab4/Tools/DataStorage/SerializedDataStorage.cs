@@ -45,19 +45,19 @@ namespace KMA.ProgrammingInCSharp2020.Lab4.Tools.DataStorage
             get { return _persons.ToList(); }
         }
 
-        public void AddPerson(ref Person person)
+        public void AddPerson( Person person)
         {
             _persons.Add(person);
             SaveList();
         }
 
-        public void DeletePerson(ref Person person)
+        public void DeletePerson( Person person)
         {
             _persons.Remove(person);
             SaveList();
         }
 
-        public void EditPerson(ref Person person, ref Person resPerson)
+        public void EditPerson( Person person, Person resPerson)
         {
             _persons[_persons.IndexOf(person)] = resPerson;
             SaveList();

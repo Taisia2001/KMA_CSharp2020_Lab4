@@ -755,7 +755,7 @@ namespace KMA.ProgrammingInCSharp2020.Lab4.ViewModels
                 "Delete?",
                     MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.Yes)
                 {
-                    StationManager.DataStorage.DeletePerson(ref _selectedPerson);
+                    StationManager.DataStorage.DeletePerson(_selectedPerson);
                     _selectedPerson = null;
                     Persons = new ObservableCollection<Person>(StationManager.DataStorage.PersonsList);
                     FilterImplementation();

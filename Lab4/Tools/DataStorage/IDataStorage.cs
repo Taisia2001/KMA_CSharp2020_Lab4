@@ -5,9 +5,9 @@ namespace KMA.ProgrammingInCSharp2020.Lab4.Tools.DataStorage
 {
     internal interface IDataStorage
     {
-        void AddPerson(ref Person person);
-        void DeletePerson(ref Person person);
-        void EditPerson(ref Person person, ref Person resPerson);
+        void AddPerson(Person person);
+        void DeletePerson(Person person);
+        void EditPerson( Person person, Person resPerson);
         List<Person> PersonsList { get;}
     }
 }

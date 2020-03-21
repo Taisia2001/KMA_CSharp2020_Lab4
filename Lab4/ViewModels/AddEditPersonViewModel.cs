@@ -129,14 +129,13 @@ namespace KMA.ProgrammingInCSharp2020.Lab4.ViewModels
                     if (MessageBox.Show("Submit changes?", "Save?",
                             MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.Yes)
                     {
-                        Person res = new Person(Name, Surname, Email, (DateTime)Date);
                         if (_person == null)
                         {
-                            StationManager.DataStorage.AddPerson(ref res);
+                            StationManager.DataStorage.AddPerson(new Person(Name, Surname, Email, (DateTime)Date));
                         }
                         else
                         {
-                            StationManager.DataStorage.EditPerson(ref _person, ref res);
+                            StationManager.DataStorage.EditPerson(_person, new Person(Name, Surname, Email, (DateTime)Date));
                         }
                         
                     }
