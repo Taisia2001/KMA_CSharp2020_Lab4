@@ -13,7 +13,6 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Button Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Center" Background="DarkGray"
                 Margin="20 20 40 0" FontStyle="Italic" FontWeight="Bold"  Content="Add Person" Command="{Binding AddCommand,UpdateSourceTrigger=PropertyChanged}" />
@@ -21,8 +20,6 @@
                 Margin="20 20 40 0" FontStyle="Italic" FontWeight="Bold"  Content="Edit Person" Command="{Binding EditCommand,UpdateSourceTrigger=PropertyChanged}" />
         <Button Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Center" Background="DarkGray"
                 Margin="20 20 40 0" FontStyle="Italic" FontWeight="Bold"  Content="Delete Person" Command="{Binding DeleteCommand,UpdateSourceTrigger=PropertyChanged}" />
-        <Button Grid.Column="3" HorizontalAlignment="Stretch" VerticalAlignment="Center" Background="DarkGray"
-                Margin="20 20 40 0" FontStyle="Italic" FontWeight="Bold"  Content="Save List" Command="{Binding SaveCommand,UpdateSourceTrigger=PropertyChanged}" />
-        
+       
     </Grid>
 </UserControl>

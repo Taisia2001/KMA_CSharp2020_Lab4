@@ -26,7 +26,7 @@
         </Grid.ColumnDefinitions>
         <Label Grid.Row="0"  Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" FontStyle="Oblique" FontWeight="DemiBold"  FontSize="16" Content="Name"/>
         <TextBox Grid.Row="1" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Center" Height="30" Margin="5" Text="{Binding Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
-        <Label Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" FontStyle="Oblique" FontWeight="DemiBold"  FontSize="16" Content="Surame"/>
+        <Label Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" FontStyle="Oblique" FontWeight="DemiBold"  FontSize="16" Content="Surname"/>
         <TextBox Grid.Row="3" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Center" Height="30" Margin="5" Text="{Binding Surname, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
         <Label Grid.Row="4" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" FontStyle="Oblique" FontWeight="DemiBold"  FontSize="16" Content="Email"/>
         <TextBox Grid.Row="5" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Center" Height="30" Margin="5" Text="{Binding Email, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>

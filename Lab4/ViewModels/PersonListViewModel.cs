@@ -25,7 +25,6 @@ namespace KMA.ProgrammingInCSharp2020.Lab4.ViewModels
         private RelayCommand<object> _addCommand;
         private RelayCommand<object> _editCommand;
         private RelayCommand<object> _deleteCommand;
-        private RelayCommand<object> _saveCommand;
         private RelayCommand<object> _sortName;
         private RelayCommand<object> _sortSurname;
         private RelayCommand<object> _sortEmail;
@@ -123,18 +122,7 @@ namespace KMA.ProgrammingInCSharp2020.Lab4.ViewModels
              }
          }
 
-        
-
-        public RelayCommand<object> SaveCommand
-         {
-             get
-             {
-                 return _saveCommand ?? (_saveCommand = new RelayCommand<object>(
-                            SaveCommandImplementation));
-             }
-         }
-
-      
+              
 
         public RelayCommand<object> SortName
         {
@@ -657,18 +645,6 @@ namespace KMA.ProgrammingInCSharp2020.Lab4.ViewModels
             StationManager.Initialize(new SerializedDataStorage());
             _persons = new ObservableCollection<Person>(StationManager.DataStorage.PersonsList);
             
-        }
-
-        private async void SaveCommandImplementation(object obj)
-        {
-            LoaderManager.Instance.ShowLoader();
-            await Task.Run(() =>
-            {
-                StationManager.DataStorage.PersonsList = _persons.ToList();
-                StationManager.DataStorage.SaveList();
-                
-            });
-            LoaderManager.Instance.HideLoader();
         }
 
         private async void SortImplementation(object o, int i)

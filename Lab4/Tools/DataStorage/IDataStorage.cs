@@ -8,7 +8,6 @@ namespace KMA.ProgrammingInCSharp2020.Lab4.Tools.DataStorage
         void AddPerson(Person person);
         void DeletePerson(Person person);
         void EditPerson(Person person, Person resPerson);
-        void SaveList();
         List<Person> PersonsList { get; set; }
     }
 }

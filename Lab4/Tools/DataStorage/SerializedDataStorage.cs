@@ -35,7 +35,7 @@ namespace KMA.ProgrammingInCSharp2020.Lab4.Tools.DataStorage
             }
         }
 
-        public void SaveList()
+        private void SaveList()
         {
             SerializationManager.Serialize(_persons, FileFolderHelper.StorageFilePath);
         }
