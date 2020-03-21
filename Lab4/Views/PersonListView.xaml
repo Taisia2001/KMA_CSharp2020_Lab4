@@ -40,8 +40,8 @@
                 <DataGridTextColumn Header="Is Birthday" Binding="{Binding IsBirthday, Mode=OneWay}"></DataGridTextColumn>
             </DataGrid.Columns>
         </DataGrid>
-        <GridSplitter Grid.Column="1" ShowsPreview="False" Width="5"
-        HorizontalAlignment="Center" VerticalAlignment="Stretch" />
+        <GridSplitter Grid.Column="1" Grid.RowSpan="2" ShowsPreview="False" Width="5"
+        HorizontalAlignment="Center" VerticalAlignment="Stretch" Background="AntiqueWhite" />
         <panels:FilterControl Grid.Row="1" Grid.Column="2"/>
         <panels:ButtonsControl Grid.Row="2" Grid.ColumnSpan="3" Margin="0 0 0 15"/>
 
